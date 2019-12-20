@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Форма Заполнения</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container mt-4">
+		<h1>настрой тимлида</h1>
+			<form  action="check.php" method="post">
+
+				<select class="teamlead" id="teamlead" name="teamlead">
+					<option value="1">Хорошее настроение</option>
+					<option value="2">Нормальное настроение</option>
+					<option value="3">Плохое настроение</option>
+					<option value="4">не попадись на
+						глаза</option>
+				</select>
+				<h1>работа джуна</h1>
+
+				<select class="djun" id="djun" name="djun" onchange="">
+					<option value="0">Накосячил</option>
+					<option value="1">Хорошая работа</option>
+				</select>
+                <br/><br/>
+				<button type="submit" id="saveUser" name="submitData" class="btn btn-success" onclick="myfunc()" > Сохранить</button>
+                <div id="heretext"></div><br/>
+                <button type="submit" > <a href="http://localhost/test/hr.php" target="_blank">HR T-1000</a></button><br/>
+                <button type="submit" > <a href="http://localhost/test/manager.php" target="_blank">Менеджер T-1001</a></button>
+			</form>
+
+			<div id="errorMessage"></div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/form.js">
+</script>
+</body>
+</html>
+
